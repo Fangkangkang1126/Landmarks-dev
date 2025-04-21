@@ -1,0 +1,63 @@
+
+[
+    {
+        "id": 1001,
+        "name": "金门大桥",
+        "park": "金门国家休闲区",
+        "state": "加利福尼亚",
+        "description": "世界著名的悬索桥，旧金山地标",
+        "imageName": "Pic-test",
+        "coordinates": {
+            "latitude": 37.8199,
+            "longitude": -122.4783
+        }
+    },
+    {
+        "id": 1002,
+        "name": "优胜美地瀑布",
+        "park": "优胜美地国家公园",
+        "state": "加利福尼亚",
+        "description": "北美最高瀑布，落差达739米",
+        "imageName": "Pic-test",
+        "coordinates": {
+            "latitude": 37.7469,
+            "longitude": -119.5936
+        }
+    },
+    {
+        "id": 1003,
+        "name": "大峡谷",
+        "park": "大峡谷国家公园",
+        "state": "亚利桑那",
+        "description": "科罗拉多河冲刷形成的壮丽峡谷",
+        "imageName": "Pic-test",
+        "coordinates": {
+            "latitude": 36.1069,
+            "longitude": -112.1129
+        }
+    },
+    {
+        "id": 1004,
+        "name": "自由女神像",
+        "park": "自由岛",
+        "state": "纽约",
+        "description": "法国赠送给美国的独立礼物",
+        "imageName": "Pic-test",
+        "coordinates": {
+            "latitude": 40.6892,
+            "longitude": -74.0445
+        }
+    },
+    {
+        "id": 1005,
+        "name": "黄石大棱镜泉",
+        "park": "黄石国家公园",
+        "state": "怀俄明",
+        "description": "美国最大温泉，色彩如彩虹",
+        "imageName": "Pic-test",
+        "coordinates": {
+            "latitude": 44.5280,
+            "longitude": -110.7980
+        }
+    }
+]

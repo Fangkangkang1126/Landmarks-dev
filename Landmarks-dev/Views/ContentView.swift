@@ -15,6 +15,15 @@ struct ContentView: View {
     var body: some View {
         
         NavigationSplitView {
+            List(landmarks) { landmark in
+                NavigationLink {
+                    LandmarkDetail(landmark: landmark)
+                } label: {
+                    LandmarkRow(landmark:landmark)
+                }
+                       }
+            .navigationTitle("导航地标")
+                   
             List {
                 ForEach(items) { item in
                     NavigationLink {
@@ -38,34 +47,8 @@ struct ContentView: View {
         } detail: {
             Text("Select an item")
         }
-        VStack {
-            MapView ()
-                .frame(height: 300)
-            CircleImage()
-                .offset(y:-120)
-                .padding(.bottom, -130)
-            VStack {
-                Text("老君山")
-                    .font(.title)
-                    .multilineTextAlignment(.trailing)
-                    .bold()
-                
-                HStack {
-                    Text ("公园")
-//                    Spacer()
-                    Divider()
-                        .frame(height:1)
-                        .padding(.horizontal)
-                        .foregroundStyle(.blue)
-                    Text("中国")
-                    
-                }
-                Divider()
-            }
-            .padding()
-            
-            Spacer()
-        }
+         
+  
         
             
     }
