@@ -1,0 +1,74 @@
+
+[
+  // 示例 1: 山地徒步记录
+  {
+    "id": 101,
+    "name": "天使之步",
+    "distance": 8.2,
+    "difficulty": 4,
+    "observations": [
+      {
+        "distanceFromStart": 0.5,
+        "elevation": [350.0, 420.0],
+        "pace": [6.5, 8.2],
+        "heartRate": [90.0, 120.0]
+      },
+      {
+        "distanceFromStart": 3.8,
+        "elevation": [680.0, 720.0],
+        "pace": [9.1, 12.3],
+        "heartRate": [130.0, 155.0]
+      }
+    ]
+  },
+ 
+  // 示例 2: 森林步道记录
+  {
+    "id": 202,
+    "name": "迷雾森林环线",
+    "distance": 5.7,
+    "difficulty": 3,
+    "observations": [
+      {
+        "distanceFromStart": 1.2,
+        "elevation": [200.0, 210.0],
+        "pace": [5.8, 7.1],
+        "heartRate": [85.0, 105.0]
+      },
+      {
+        "distanceFromStart": 4.1,
+        "elevation": [180.0, 190.0],
+        "pace": [6.9, 8.4],
+        "heartRate": [110.0, 125.0]
+      }
+    ]
+  },
+ 
+  // 示例 3: 沙漠探险记录
+  {
+    "id": 303,
+    "name": "赤岩峡谷穿越",
+    "distance": 12.5,
+    "difficulty": 5,
+    "observations": [
+      {
+        "distanceFromStart": 2.3,
+        "elevation": [100.0, 120.0],
+        "pace": [8.0, 10.5],
+        "heartRate": [95.0, 115.0]
+      },
+      {
+        "distanceFromStart": 7.8,
+        "elevation": [150.0, 180.0],
+        "pace": [11.2, 14.7],
+        "heartRate": [125.0, 145.0]
+      },
+      {
+        "distanceFromStart": 11.1,
+        "elevation": [90.0, 100.0],
+        "pace": [6.5, 8.9],
+        "heartRate": [135.0, 160.0]
+      }
+    ]
+  }
+]
