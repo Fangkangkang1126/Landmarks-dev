@@ -11,7 +11,9 @@ struct  CircleImage: View {
     var image:Image
     var body: some View {
         self.image
-            .resizable(capInsets: EdgeInsets(top: 0.0, leading: 2.0, bottom: 0.0, trailing: 1.0))
+            .resizable()
+            .scaledToFit()
+            .frame(width: 150)
             .clipShape(Circle())
                         .overlay {
                             Circle().stroke(.white, lineWidth: 4)

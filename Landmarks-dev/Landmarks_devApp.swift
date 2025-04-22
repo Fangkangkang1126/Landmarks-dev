@@ -5,19 +5,26 @@
 //  Created by fkk on 2025/4/22.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 @main
 struct Landmarks_devApp: App {
+    @State private var modelData = ModelData()
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Item.self
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(
+            schema: schema,
+            isStoredInMemoryOnly: false
+        )
 
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(
+                for: schema,
+                configurations: [modelConfiguration]
+            )
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
@@ -26,6 +33,7 @@ struct Landmarks_devApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(modelData)
         }
         .modelContainer(sharedModelContainer)
     }
