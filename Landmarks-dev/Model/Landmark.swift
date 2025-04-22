@@ -37,6 +37,12 @@ struct Landmark: Hashable, Codable, Identifiable {
             longitude: coordinates.longitude
         )
     }
+    var featureImageOffice: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
+    }
+    var featureImage: Image? {
+        isFeatured ? Image(imageName) : nil
+    }
 
     struct Coordinates: Hashable, Codable {
         var latitude: Double
